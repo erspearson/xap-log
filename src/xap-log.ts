@@ -59,9 +59,9 @@ export module xaplog {
   })
 
   network.on('message', (m, remote) => { 
-    const s = sourceFilter.exec(m.header.source)
-    const c = classFilter.exec(m.header.class)
-    if(sourceFilter.test(m.header.source) && classFilter.test(m.header.class)) {
+    const s = sourceFilter.exec(m.source)
+    const c = classFilter.exec(m.class)
+    if(sourceFilter.test(m.source) && classFilter.test(m.class)) {
       log(1,`${m.header.class} from ${m.header.source} (${m.header.uid})${m.blocks.length > 2 ? ` ${m.blocks.length} blocks`:''}`)
       if(dump) { console.log(m.originalText) }
       }
