@@ -2,8 +2,9 @@
 A command line message logger for xAP home automation using xap-framework
 
 ## Install and run
-* Compiled code and dependencies can be installed from npmjs: ``npm install xap-log`
-* Run from the command line: ``node ./lib/xap-log.js [<options>]`` or ``npm start [-- <options>]``
+* Compiled code and dependencies can be installed from npmjs: ``[sudo] npm install [-g] xap-log``
+* Run from the command line: ``xap-log [<options>]`` if installed globally  
+otherwise ``node ./lib/xap-log.js [<options>]`` or ``npm start [-- <options>]``
 * Stops on receiving SIGINT, ctrl-C.
 
 ## Options
