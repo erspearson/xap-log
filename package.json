@@ -2,7 +2,7 @@
   "name": "xap-log",
   "description": "Console logging utility for xAP home automation messages",
   "author": "Edward Pearson",
-  "version": "0.9.3",
+  "version": "0.9.4",
   "license": "MIT",
   "keywords": [
     "xAP home automation",
@@ -27,7 +27,7 @@
     "prepublishOnly": "tsc -p ."
   },
   "dependencies": {
-    "minimist": "^1.2.0",
+    "minimist": "^1.2.3",
     "xap-framework": "^0.9.3"
   },
   "devDependencies": {
